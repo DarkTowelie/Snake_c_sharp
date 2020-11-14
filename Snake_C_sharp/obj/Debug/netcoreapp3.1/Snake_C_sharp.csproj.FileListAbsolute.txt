@@ -1,0 +1,13 @@
+C:\Users\valer\source\repos\Snake_C_sharp\Snake_C_sharp\bin\Debug\netcoreapp3.1\Snake_C_sharp.exe
+C:\Users\valer\source\repos\Snake_C_sharp\Snake_C_sharp\bin\Debug\netcoreapp3.1\Snake_C_sharp.deps.json
+C:\Users\valer\source\repos\Snake_C_sharp\Snake_C_sharp\bin\Debug\netcoreapp3.1\Snake_C_sharp.runtimeconfig.json
+C:\Users\valer\source\repos\Snake_C_sharp\Snake_C_sharp\bin\Debug\netcoreapp3.1\Snake_C_sharp.runtimeconfig.dev.json
+C:\Users\valer\source\repos\Snake_C_sharp\Snake_C_sharp\bin\Debug\netcoreapp3.1\Snake_C_sharp.dll
+C:\Users\valer\source\repos\Snake_C_sharp\Snake_C_sharp\bin\Debug\netcoreapp3.1\Snake_C_sharp.pdb
+C:\Users\valer\source\repos\Snake_C_sharp\Snake_C_sharp\obj\Debug\netcoreapp3.1\Snake_C_sharp.csprojAssemblyReference.cache
+C:\Users\valer\source\repos\Snake_C_sharp\Snake_C_sharp\obj\Debug\netcoreapp3.1\Snake_C_sharp.AssemblyInfoInputs.cache
+C:\Users\valer\source\repos\Snake_C_sharp\Snake_C_sharp\obj\Debug\netcoreapp3.1\Snake_C_sharp.AssemblyInfo.cs
+C:\Users\valer\source\repos\Snake_C_sharp\Snake_C_sharp\obj\Debug\netcoreapp3.1\Snake_C_sharp.csproj.CoreCompileInputs.cache
+C:\Users\valer\source\repos\Snake_C_sharp\Snake_C_sharp\obj\Debug\netcoreapp3.1\Snake_C_sharp.dll
+C:\Users\valer\source\repos\Snake_C_sharp\Snake_C_sharp\obj\Debug\netcoreapp3.1\Snake_C_sharp.pdb
+C:\Users\valer\source\repos\Snake_C_sharp\Snake_C_sharp\obj\Debug\netcoreapp3.1\Snake_C_sharp.genruntimeconfig.cache
