@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valer\\source\\repos\\Snake_C_sharp\\Snake_C_sharp\\Snake_C_sharp.csproj",
+      "projectUniqueName": "C:\\Users\\valer\\Desktop\\SbakeShs\\Snake_c_sharp\\Snake_C_sharp\\Snake_C_sharp.csproj",
       "projectName": "Snake_C_sharp",
-      "projectPath": "C:\\Users\\valer\\source\\repos\\Snake_C_sharp\\Snake_C_sharp\\Snake_C_sharp.csproj",
+      "projectPath": "C:\\Users\\valer\\Desktop\\SbakeShs\\Snake_c_sharp\\Snake_C_sharp\\Snake_C_sharp.csproj",
       "packagesPath": "C:\\Users\\valer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valer\\source\\repos\\Snake_C_sharp\\Snake_C_sharp\\obj\\",
+      "outputPath": "C:\\Users\\valer\\Desktop\\SbakeShs\\Snake_c_sharp\\Snake_C_sharp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Microsoft\\Xamarin\\NuGet\\",
@@ -39,6 +39,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -50,6 +51,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -65,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

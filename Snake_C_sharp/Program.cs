@@ -32,6 +32,7 @@ namespace Snake_C_sharp
             fruitX = r.Next(1, width - 2);
             fruitY = r.Next(1, height - 2);
         }
+
         public Snake()
         {
             gameOver = false;
@@ -54,6 +55,7 @@ namespace Snake_C_sharp
         {
             Console.SetCursorPosition(0, 0);
 
+            Console.ForegroundColor = ConsoleColor.White;
             for (int i = 0; i < width; i++)
             {
                 Console.Write("#");
@@ -65,18 +67,21 @@ namespace Snake_C_sharp
                 for (int j = 0; j < width; j++)
                 {
                     bool isEmpty = true;
+                    Console.ForegroundColor = ConsoleColor.White;
                     if (j == 0 || j == width - 1)
                     {
                         Console.Write("#");
                         isEmpty = false;
                     }
-                   
+
+                    Console.ForegroundColor = ConsoleColor.Green;
                     if (i == headY && j == headX)
                     {
                         Console.Write("O");
                         isEmpty = false;
                     }
 
+                    Console.ForegroundColor = ConsoleColor.Red;
                     if (i == fruitY && j == fruitX)
                     {
                         Console.Write("F");
@@ -85,6 +90,11 @@ namespace Snake_C_sharp
 
                     for (int k = 0; k < nTail; k++)
                     {
+                        Console.ForegroundColor = ConsoleColor.Green;
+
+                        if (k == nTail - 1)
+                            Console.ForegroundColor = ConsoleColor.Red;
+
                         if (tailY[k] == i && tailX[k] == j)
                         {
                             Console.Write("o");
@@ -100,6 +110,7 @@ namespace Snake_C_sharp
                 Console.Write("\n");
             }
 
+            Console.ForegroundColor = ConsoleColor.White;
             for (int i = 0; i < width; i++)
             {
                 Console.Write("#");
@@ -117,16 +128,20 @@ namespace Snake_C_sharp
                 switch (name.KeyChar)
                 {
                     case 'a':
-                        dir = eDirection.LEFT;
+                        if (dir != eDirection.RIGHT)
+                            dir = eDirection.LEFT;
                         break;
                     case 'd':
-                        dir = eDirection.RIGHT;
+                        if (dir != eDirection.LEFT)
+                            dir = eDirection.RIGHT;
                         break;
                     case 's':
-                        dir = eDirection.DOWN;
+                        if (dir != eDirection.UP)
+                            dir = eDirection.DOWN;
                         break;
                     case 'w':
-                        dir = eDirection.UP;
+                        if (dir != eDirection.DOWN)
+                            dir = eDirection.UP;
                         break;
                     case 'x':
                         gameOver = true;
@@ -144,20 +159,13 @@ namespace Snake_C_sharp
         }
         public void Logic()
         {
-            int prevX = tailX[0];
-            int prevY = tailY[0];
-            int prev2X, prev2Y;
+            for (int i = nTail; i > 0; i--)
+            {
+                tailX[i] = tailX[i - 1];
+                tailY[i] = tailY[i - 1];
+            }
             tailX[0] = headX;
             tailY[0] = headY;
-            for (int i = 1; i < nTail; i++)
-            {
-                prev2X = tailX[i];
-                prev2Y = tailY[i];
-                tailX[i] = prevX;
-                tailY[i] = prevY;
-                prevX = prev2X;
-                prevY = prev2Y;
-            }
 
             for (int i = 1; i < nTail; i++)
             {
